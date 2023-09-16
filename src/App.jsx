@@ -2,7 +2,7 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import './App.css'
 import { About } from "./Pages/Aboutpage";
-import { Contacts } from "./Pages/Contactspage";
+import { Sliders } from "./Pages/Sliderpage";
 import { Main } from "./Pages/Mainpage";
 import { Registration } from "./Pages/Registrationpage";
 import { Layout } from "./components/layout";
@@ -16,7 +16,7 @@ const App = () => {
   <Route path='/' element={<Layout />}>
   <Route index element={<Main />} />
   <Route path='about' element={<About />} />
-  <Route path='contacts' element={<Contacts />} />
+  <Route path='Sliders' element={<Sliders />} />
   <Route path='registration' element={<Registration />} />
   <Route path='*' element={<Notfound />}/>
   </Route>

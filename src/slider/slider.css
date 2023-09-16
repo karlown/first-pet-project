@@ -1,0 +1,11 @@
+.slider {
+    justify-content: center;
+}
+.slide {
+    width: 1900px;
+    height: 800px;
+   
+}
+.swiper-pagination-horizontal {
+    background: none;
+}

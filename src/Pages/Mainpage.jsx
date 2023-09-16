@@ -5,8 +5,9 @@ import React, {useState} from "react";
     import '../App.css'
     import Calculator from "../calc/Calc";
     import { About } from "./Aboutpage";
-    import { Contacts } from "./Contactspage";
+    import { Sliders } from "./Sliderpage";
     import { Registration } from "./Registrationpage";
+    
 
 const Main = () => {
       const [modalDogApi, setModalDogApi] = useState(false);
@@ -25,10 +26,9 @@ const Main = () => {
     <Modal active={modalCalculator} setActive={setModalCalculator}>
       <Calculator />
     </Modal>
-    
-    <Routes>
+  <Routes>
       <Route path='/about' element={<About />} />
-      <Route path='/contacts' element={<Contacts />} />
+      <Route path='/Slider' element={<Sliders />} />
       <Route path='/registration' element={<Registration />} />
     </Routes>
         </div>
